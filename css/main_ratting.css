@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.main-ratting{
+    border: 1px solid rgba(196, 196, 196, 0.3);
+    box-sizing: border-box;
+    padding: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+}
+
+.main-ratting > p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 20px;
+}
+
+.main-ratting > input{
+    margin-bottom: 11px;
+}
+
+.main-ratting > textarea{
+    margin-bottom: 20px;
+}
+
+.main-star-box p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 0;
+    margin-right: 10px;
+}
+
+.main-star{
+    transform: rotateY(180deg);
+}
+
+.main-star input{
+    display: none;
+}
+
+.main-star-label{
+    display: block;
+    cursor: pointer;
+    background: url("../image/icon/outlined_star.svg") no-repeat;
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+}
+
+.main-star-label:hover,
+.main-star-label:hover ~ .main-star-label,
+.main-star > input:checked ~ .main-star-label{
+    background: url("../image/icon/fill_star.svg") no-repeat;
+    background-size: 20px 20px;
+}
+
+.main-ratting-button,
+.main-ratting-button:hover{
+    width: 100px;
+    height: 30px;
+    background: #FF881F;
+    border-radius: 16px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+    padding: 0;
+}

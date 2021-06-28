@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/navigation.css">
+    <link rel="stylesheet" href="./css/main-home.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+<body>
+<!--    header-->
+<header class="w-100 bg-dark d-flex justify-content-center">
+    <div class="row w-100">
+        <!--        search box-->
+        <div class="col-3 d-flex align-items-center justify-content-end">
+            <form method="post" action="" class="input-group search-box">
+                <input name="search_box" placeholder="Search anything...">
+                <button class="input-group-text btn p-0">
+                    <img src="image/icon/search_icon.svg" alt="search_icon">
+                </button>
+            </form>
+        </div>
+        <!--        logo-->
+        <div class="col-6 d-flex justify-content-center align-items-center">
+            <a href="">
+                <img src="image/icon/logo.svg" alt="logo">
+            </a>
+        </div>
+        <!--        icon-->
+        <div class="col-3">
+            <div class="btn-group icon_group">
+                <a href="" class="btn">
+                    <img src="image/icon/account_icon.svg" alt="account">
+                </a>
+                <a href="" class="btn">
+                    <img src="image/icon/wishlist_icon.svg" alt="wishlist">
+                </a>
+                <a href="" class="btn">
+                    <img src="image/icon/cart_icon.svg" alt="cart">
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container-fluid">
+    <!--navigation-->
+    <nav class="w-100 d-flex flex-column align-items-center mt-4">
+        <!--    category-->
+        <div class="d-flex justify-content-between navigation">
+            <!--        men-->
+            <div class="dropdown">
+                <a class="btn dropdown-button" id="men-button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span>Men</span>
+                    <img src="image/icon/dropdown_icon.svg" alt="dropdown-icon" class="ms-1">
+                </a>
+                <div class="dropdown-menu" id="men-dropdown" aria-labelledby="men-button">
+                    <div class="d-flex justify-content-around align-items-center dropdown-box">
+                        <a href="CategoryPage.html" class="dropdown-product d-flex flex-column align-items-center">
+                            <img src="image/product/sneaker.svg" alt="dropdown-item">
+                            <p>Sneaker</p>
+                        </a>
+                        <a href="CategoryPage.html" class="dropdown-product d-flex flex-column align-items-center">
+                            <img src="image/product/classic.svg" alt="dropdown-item">
+                            <p>Classic</p>
+                        </a>
+                        <a href="CategoryPage.html" class="dropdown-product d-flex flex-column align-items-center">
+                            <img src="image/product/custom.svg" alt="dropdown-item">
+                            <p>Custom</p>
+                        </a>
+                        <a href="CategoryPage.html" class="dropdown-product d-flex flex-column align-items-center">
+                            <img src="image/product/sneaker.svg" alt="dropdown-item">
+                            <p>Demo</p>
+                        </a>
+                        <a href="CategoryPage.html" class="dropdown-product d-flex flex-column align-items-center">
+                            <img src="image/product/classic.svg" alt="dropdown-item">
+                            <p>Demo</p>
+                        </a>
+                        <a href="CategoryPage.html" class="dropdown-product d-flex flex-column align-items-center">
+                            <img src="image/product/custom.svg" alt="dropdown-item">
+                            <p>Demo</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--        woman-->
+            <div class="dropdown">
+                <a class="btn dropdown-button" id="women-button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span>Women</span>
+                    <img src="image/icon/dropdown_icon.svg" alt="dropdown-icon" class="ms-1">
+                </a>
+                <div class="dropdown-menu dropdown-shadow" id="women-dropdown" aria-labelledby="women-button">
+                    <div class="d-flex justify-content-around align-items-center dropdown-box">
+                        <a href="CategoryPage.html" class="dropdown-product d-flex flex-column align-items-center">
+                            <img src="image/product/sneaker.svg" alt="dropdown-item">
+                            <p>Sneaker</p>
+                        </a>
+                        <a href="CategoryPage.html" class="dropdown-product d-flex flex-column align-items-center">
+                            <img src="image/product/classic.svg" alt="dropdown-item">
+                            <p>Classic</p>
+                        </a>
+                        <a href="CategoryPage.html" class="dropdown-product d-flex flex-column align-items-center">
+                            <img src="image/product/custom.svg" alt="dropdown-item">
+                            <p>Custom</p>
+                        </a>
+                        <a href="CategoryPage.html" class="dropdown-product d-flex flex-column align-items-center">
+                            <img src="image/product/sneaker.svg" alt="dropdown-item">
+                            <p>Demo</p>
+                        </a>
+                        <a href="CategoryPage.html" class="dropdown-product d-flex flex-column align-items-center">
+                            <img src="image/product/classic.svg" alt="dropdown-item">
+                            <p>Demo</p>
+                        </a>
+                        <a href="CategoryPage.html" class="dropdown-product d-flex flex-column align-items-center">
+                            <img src="image/product/custom.svg" alt="dropdown-item">
+                            <p>Demo</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--        kid-->
+            <div class="dropdown">
+                <a class="btn dropdown-button" id="kid-button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class>Kid</span>
+                    <img src="image/icon/dropdown_icon.svg" alt="dropdown-icon" class="ms-1">
+                </a>
+                <div class="dropdown-menu" id="kid-dropdown" aria-labelledby="kid-button">
+                    <div class="d-flex justify-content-around align-items-center dropdown-box">
+                        <a href="CategoryPage.html" class="dropdown-product d-flex flex-column align-items-center">
+                            <img src="image/product/sneaker.svg" alt="dropdown-item">
+                            <p>Sneaker</p>
+                        </a>
+                        <a href="CategoryPage.html" class="dropdown-product d-flex flex-column align-items-center">
+                            <img src="image/product/classic.svg" alt="dropdown-item">
+                            <p>Classic</p>
+                        </a>
+                        <a href="CategoryPage.html" class="dropdown-product d-flex flex-column align-items-center">
+                            <img src="image/product/custom.svg" alt="dropdown-item">
+                            <p>Custom</p>
+                        </a>
+                        <a href="CategoryPage.html" class="dropdown-product d-flex flex-column align-items-center">
+                            <img src="image/product/sneaker.svg" alt="dropdown-item">
+                            <p>Demo</p>
+                        </a>
+                        <a href="CategoryPage.html" class="dropdown-product d-flex flex-column align-items-center">
+                            <img src="image/product/classic.svg" alt="dropdown-item">
+                            <p>Demo</p>
+                        </a>
+                        <a href="CategoryPage.html" class="dropdown-product d-flex flex-column align-items-center">
+                            <img src="image/product/custom.svg" alt="dropdown-item">
+                            <p>Demo</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--        new-->
+            <a class="btn dropdown-button" href="NewsPage.html">
+                News<img src="image/icon/dropdown_icon.svg" alt="dropdown-icon" class="ms-1">
+            </a>
+            <!--        information-->
+            <a class="btn dropdown-button" href="AboutUsPage.html">
+                Information<img src="image/icon/dropdown_icon.svg" alt="dropdown-icon" class="ms-1">
+            </a>
+        </div>
+    </nav>
+    <!--main-->
+    <main class="w-100 d-flex flex-column align-items-center">
+        <!--        banner-->
+        <div id="main-banner" class="carousel slide w-100" data-bs-ride="carousel">
+            <div class="carousel-inner w-100 d-flex align-items-center">
+                <!--                slide 1-->
+                <div class="carousel-item" data-bs-interval="5000"></div>
+                <!--                slide 2-->
+                <div class="carousel-item w-100 active" data-bs-interval="5000">
+                    <div class="w-100 d-flex align-items-center justify-content-around">
+                        <img src="image/home_banner/home_banner_1.png" alt="home banner">
+                        <img src="image/home_banner/home_banner_2.png" alt="home banner">
+                        <div class="d-flex flex-column align-items-end main-banner-info">
+                            <p>Mango x Converses Collection</p>
+                            <p>CHUCK TAYLOR</p>
+                            <p>ALL STAR</p>
+                            <button>
+                                View more
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!--                slide 3-->
+                <div class="carousel-item" data-bs-interval="5000"></div>
+            </div>
+            <div class="main-banner-button carousel-indicators">
+                <button data-bs-target="#main-banner" data-bs-slide-to="0"></button>
+                <button data-bs-target="#main-banner" data-bs-slide-to="1" class="active" aria-current="true"></button>
+                <button data-bs-target="#main-banner" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+        <!--        container-->
+        <div class="w-100 d-flex justify-content-center">
+            <div class="main-container">
+                <!--                popular-->
+                <div class="w-100">
+                    <!--                popular content-->
+                    <div class="w-100 d-flex justify-content-center align-items-center">
+                        <div class="main-popular-line"></div>
+                        <p class="main-popular-content">Popular item</p>
+                        <div class="main-popular-line"></div>
+                    </div>
+                    <!--                popular category-->
+                    <div class="w-100 d-flex justify-content-around main-popular-category">
+                        <a href="">
+                            <p>MEN</p>
+                            <img src="image/popular_category/popular_category_1.png">
+                        </a>
+                        <a href="">
+                            <p>WOMEN</p>
+                            <img src="image/popular_category/popular_category_2.png">
+                        </a>
+                        <a href="">
+                            <p>KIDS</p>
+                            <img src="image/popular_category/popular_category_3.png">
+                        </a>
+                    </div>
+                    <!--                popular divider-->
+                    <img class="main-popular-divider" src="image/icon/divider.svg" alt="divider">
+                    <!--                popular product list-->
+                    <div class="main-popular-product d-flex flex-column align-items-center w-100">
+                        <div id="main-popular-product-container" class="carousel slide w-100" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <!--                product list 1-->
+                                <div class="carousel-item active" data-bs-interval="2000">
+                                    <div class="d-flex flex-wrap justify-content-between w-100">
+                                        <!--                    product 1-->
+                                        <div class="card d-flex align-items-center">
+                                            <img src="image/category_product/category_product_1.png"
+                                                 class="card-img-top" alt="category product">
+                                            <div class="card-body">
+                                                <p class="card-title w-100 text-center">Palladium Pampa</p>
+                                                <p class="card-text w-100 text-center">Sale: <span>1.500.000 đ</span>
+                                                </p>
+                                                <p class="card-text w-100 text-center">Price: 2.000.000 đ</p>
+                                            </div>
+                                            <div class="card-action d-flex flex-column justify-content-center align-items-center w-100 h-100">
+                                                <button class="btn d-flex justify-content-center align-items-center">ADD
+                                                    TO CART
+                                                </button>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <a href="InformationPage.html" class="btn card-wishlist">
+                                                        <img src="image/icon/view_icon.svg" alt="view">
+                                                    </a>
+                                                    <a href="" class="btn card-wishlist">
+                                                        <img src="image/icon/wishlist_icon_1.svg" alt="wish list">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--                    product 2-->
+                                        <div class="card d-flex align-items-center">
+                                            <div class="card-badge d-flex flex-column align-items-center">
+                                                <p class="card-new">New</p>
+                                                <p class="card-sale">-25%</p>
+                                            </div>
+                                            <img src="image/category_product/category_product_2.png"
+                                                 class="card-img-top" alt="category product">
+                                            <div class="card-body">
+                                                <p class="card-title w-100 text-center">CV Chuck 70 Tape</p>
+                                                <p class="card-text w-100 text-center">Sale: <span>1.500.000 đ</span>
+                                                </p>
+                                                <p class="card-text w-100 text-center">Price: 2.000.000 đ</p>
+                                            </div>
+                                            <div class="card-action d-flex flex-column justify-content-center align-items-center w-100 h-100">
+                                                <button class="btn d-flex justify-content-center align-items-center">ADD
+                                                    TO CART
+                                                </button>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <a href="InformationPage.html" class="btn card-wishlist">
+                                                        <img src="image/icon/view_icon.svg" alt="view">
+                                                    </a>
+                                                    <a href="" class="btn card-wishlist">
+                                                        <img src="image/icon/wishlist_icon_1.svg" alt="wish list">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--                    product 3-->
+                                        <div class="card d-flex align-items-center">
+                                            <img src="image/category_product/category_product_3.png"
+                                                 class="card-img-top" alt="category product">
+                                            <div class="card-body">
+                                                <p class="card-title w-100 text-center">Supra Hammer</p>
+                                                <p class="card-text w-100 text-center">Sale: <span>1.500.000 đ</span>
+                                                </p>
+                                                <p class="card-text w-100 text-center">Price: 2.000.000 đ</p>
+                                            </div>
+                                            <div class="card-action d-flex flex-column justify-content-center align-items-center w-100 h-100">
+                                                <button class="btn d-flex justify-content-center align-items-center">ADD
+                                                    TO CART
+                                                </button>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <a href="InformationPage.html" class="btn card-wishlist">
+                                                        <img src="image/icon/view_icon.svg" alt="view">
+                                                    </a>
+                                                    <a href="" class="btn card-wishlist">
+                                                        <img src="image/icon/wishlist_icon_1.svg" alt="wish list">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--                    product 4-->
+                                        <div class="card d-flex align-items-center">
+                                            <div class="card-badge d-flex flex-column align-items-center">
+                                                <p class="card-sale">-25%</p>
+                                            </div>
+                                            <img src="image/category_product/category_product_2.png"
+                                                 class="card-img-top" alt="category product">
+                                            <div class="card-body">
+                                                <p class="card-title w-100 text-center">K-Swiss Gen -K </p>
+                                                <p class="card-text w-100 text-center">Sale: <span>1.500.000 đ</span>
+                                                </p>
+                                                <p class="card-text w-100 text-center">Price: 2.000.000 đ</p>
+                                            </div>
+                                            <div class="card-action d-flex flex-column justify-content-center align-items-center w-100 h-100">
+                                                <button class="btn d-flex justify-content-center align-items-center">ADD
+                                                    TO CART
+                                                </button>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <a href="InformationPage.html" class="btn card-wishlist">
+                                                        <img src="image/icon/view_icon.svg" alt="view">
+                                                    </a>
+                                                    <a href="" class="btn card-wishlist">
+                                                        <img src="image/icon/wishlist_icon_1.svg" alt="wish list">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--                    product 5-->
+                                        <div class="card d-flex align-items-center">
+                                            <img src="image/category_product/category_product_8.png"
+                                                 class="card-img-top" alt="category product">
+                                            <div class="card-body">
+                                                <p class="card-title w-100 text-center">CV Chuck 1970s</p>
+                                                <p class="card-text w-100 text-center">Sale: <span>1.500.000 đ</span>
+                                                </p>
+                                                <p class="card-text w-100 text-center">Price: 2.000.000 đ</p>
+                                            </div>
+                                            <div class="card-action d-flex flex-column justify-content-center align-items-center w-100 h-100">
+                                                <button class="btn d-flex justify-content-center align-items-center">ADD
+                                                    TO CART
+                                                </button>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <a href="InformationPage.html" class="btn card-wishlist">
+                                                        <img src="image/icon/view_icon.svg" alt="view">
+                                                    </a>
+                                                    <a href="" class="btn card-wishlist">
+                                                        <img src="image/icon/wishlist_icon_1.svg" alt="wish list">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--                    product 6-->
+                                        <div class="card d-flex align-items-center">
+                                            <img src="image/category_product/category_product_13.png"
+                                                 class="card-img-top" alt="category product">
+                                            <div class="card-body">
+                                                <p class="card-title w-100 text-center">K-Swiss Gen -K </p>
+                                                <p class="card-text w-100 text-center">Sale: <span>1.500.000 đ</span>
+                                                </p>
+                                                <p class="card-text w-100 text-center">Price: 2.000.000 đ</p>
+                                            </div>
+                                            <div class="card-action d-flex flex-column justify-content-center align-items-center w-100 h-100">
+                                                <button class="btn d-flex justify-content-center align-items-center">ADD
+                                                    TO CART
+                                                </button>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <a href="InformationPage.html" class="btn card-wishlist">
+                                                        <img src="image/icon/view_icon.svg" alt="view">
+                                                    </a>
+                                                    <a href="" class="btn card-wishlist">
+                                                        <img src="image/icon/wishlist_icon_1.svg" alt="wish list">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--                    product 7-->
+                                        <div class="card d-flex align-items-center">
+                                            <img src="image/category_product/category_product_14.png"
+                                                 class="card-img-top" alt="category product">
+                                            <div class="card-body">
+                                                <p class="card-title w-100 text-center">CV Chuck 1970s</p>
+                                                <p class="card-text w-100 text-center">Sale: <span>1.500.000 đ</span>
+                                                </p>
+                                                <p class="card-text w-100 text-center">Price: 2.000.000 đ</p>
+                                            </div>
+                                            <div class="card-action d-flex flex-column justify-content-center align-items-center w-100 h-100">
+                                                <button class="btn d-flex justify-content-center align-items-center">ADD
+                                                    TO CART
+                                                </button>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <a href="InformationPage.html" class="btn card-wishlist">
+                                                        <img src="image/icon/view_icon.svg" alt="view">
+                                                    </a>
+                                                    <a href="" class="btn card-wishlist">
+                                                        <img src="image/icon/wishlist_icon_1.svg" alt="wish list">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--                    product 8-->
+                                        <div class="card d-flex align-items-center">
+                                            <div class="card-badge d-flex flex-column align-items-center">
+                                                <p class="card-new">New</p>
+                                            </div>
+                                            <img src="image/category_product/category_product_15.png"
+                                                 class="card-img-top" alt="category product">
+                                            <div class="card-body">
+                                                <p class="card-title w-100 text-center">Vans Us MomaMoma </p>
+                                                <p class="card-text w-100 text-center">Sale: <span>1.500.000 đ</span>
+                                                </p>
+                                                <p class="card-text w-100 text-center">Price: 2.000.000 đ</p>
+                                            </div>
+                                            <div class="card-action d-flex flex-column justify-content-center align-items-center w-100 h-100">
+                                                <button class="btn d-flex justify-content-center align-items-center">ADD
+                                                    TO CART
+                                                </button>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <a href="InformationPage.html" class="btn card-wishlist">
+                                                        <img src="image/icon/view_icon.svg" alt="view">
+                                                    </a>
+                                                    <a href="" class="btn card-wishlist">
+                                                        <img src="image/icon/wishlist_icon_1.svg" alt="wish list">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--                    product 9-->
+                                        <div class="card d-flex align-items-center">
+                                            <img src="image/category_product/category_product_9.png"
+                                                 class="card-img-top" alt="category product">
+                                            <div class="card-body">
+                                                <p class="card-title w-100 text-center">CV All StarStar </p>
+                                                <p class="card-text w-100 text-center">Sale: <span>1.500.000 đ</span>
+                                                </p>
+                                                <p class="card-text w-100 text-center">Price: 2.000.000 đ</p>
+                                            </div>
+                                            <div class="card-action d-flex flex-column justify-content-center align-items-center w-100 h-100">
+                                                <button class="btn d-flex justify-content-center align-items-center">ADD
+                                                    TO CART
+                                                </button>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <a href="InformationPage.html" class="btn card-wishlist">
+                                                        <img src="image/icon/view_icon.svg" alt="view">
+                                                    </a>
+                                                    <a href="" class="btn card-wishlist">
+                                                        <img src="image/icon/wishlist_icon_1.svg" alt="wish list">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--                    product 10-->
+                                        <div class="card d-flex align-items-center">
+                                            <img src="image/category_product/category_product_10.png"
+                                                 class="card-img-top" alt="category product">
+                                            <div class="card-body">
+                                                <p class="card-title w-100 text-center">Palladium Pampa</p>
+                                                <p class="card-text w-100 text-center">Sale: <span>1.500.000 đ</span>
+                                                </p>
+                                                <p class="card-text w-100 text-center">Price: 2.000.000 đ</p>
+                                            </div>
+                                            <div class="card-action d-flex flex-column justify-content-center align-items-center w-100 h-100">
+                                                <button class="btn d-flex justify-content-center align-items-center">ADD
+                                                    TO CART
+                                                </button>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <a href="InformationPage.html" class="btn card-wishlist">
+                                                        <img src="image/icon/view_icon.svg" alt="view">
+                                                    </a>
+                                                    <a href="" class="btn card-wishlist">
+                                                        <img src="image/icon/wishlist_icon_1.svg" alt="wish list">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--                product list 2-->
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#main-popular-product-container" data-bs-slide="prev">
+                                <img src="image/icon/prev_icon.svg" alt="pre_icon">
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                    data-bs-target="#main-popular-product-container" data-bs-slide="next">
+                                <img src="image/icon/next_icon.svg" alt="pre_icon">
+                            </button>
+                        </div>
+                    </div>
+                    <!--                    view more-->
+                    <div class="w-100 d-flex justify-content-center align-items-center">
+                        <a href="" class="btn main-popular-view">
+                            View more
+                        </a>
+                    </div>
+                </div>
+                <!--                sale banner-->
+                <img src="image/home_banner/home_banner_3.png" class="main-sale" alt="home banner">
+                <!--                top seller-->
+                <div class="w-100 d-flex flex-column align-items-center main-top-seller">
+                    <p>Top seller</p>
+                    <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <div class="main-top-seller-product d-flex flex-column align-items-center">
+                        <div id="main-top-seller-product-container" class="carousel slide w-100"
+                             data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <!--                product list 1-->
+                                <div class="carousel-item active" data-bs-interval="2000">
+                                    <div class="d-flex">
+                                        <img src="image/top_product/top_product_1.png" alt="top product">
+                                        <div class="d-flex flex-wrap justify-content-between w-100">
+                                            <!--                    product 1-->
+                                            <div class="card">
+                                                <img src="image/top_product/top_product_2.png"
+                                                     class="card-img-top" alt="category product">
+                                                <div class="card-body d-flex align-items-start">
+                                                    <p class="card-title w-100 text-start">Vans Old School</p>
+                                                    <p class="card-text w-100 text-start">Sale: <span>1.500.000 đ</span>
+                                                    </p>
+                                                    <p class="card-text w-100 text-start">Price: 2.000.000 đ</p>
+                                                    <div class="d-flex main-top-seller-star">
+                                                        <img src="image/icon/fill_star.svg" alt="star">
+                                                        <img src="image/icon/fill_star.svg" alt="star">
+                                                        <img src="image/icon/fill_star.svg" alt="star">
+                                                        <img src="image/icon/fill_star.svg" alt="star">
+                                                        <img src="image/icon/fill_star.svg" alt="star">
+                                                    </div>
+                                                    <div class="d-flex justify-content-around main-top-seller-action">
+                                                        <a href="" class="btn">
+                                                            <img src="image/icon/wishlist_top_icon.svg" alt="wish list">
+                                                        </a>
+                                                        <a href="" class="btn">
+                                                            <img src="image/icon/view_top_icon.svg" alt="views">
+                                                        </a>
+                                                        <a href="" class="btn">
+                                                            <img src="image/icon/cart_top_icon.svg" alt="cart">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--                    product 2-->
+                                            <div class="card">
+                                                <img src="image/top_product/top_product_3.png"
+                                                     class="card-img-top" alt="category product">
+                                                <div class="card-body d-flex align-items-start">
+                                                    <p class="card-title w-100 text-start">CV Chuck 1970s</p>
+                                                    <p class="card-text w-100 text-start">Sale: <span>1.500.000 đ</span>
+                                                    </p>
+                                                    <p class="card-text w-100 text-start">Price: 2.000.000 đ</p>
+                                                    <div class="d-flex main-top-seller-star">
+                                                        <img src="image/icon/fill_star.svg" alt="star">
+                                                        <img src="image/icon/fill_star.svg" alt="star">
+                                                        <img src="image/icon/fill_star.svg" alt="star">
+                                                        <img src="image/icon/fill_star.svg" alt="star">
+                                                        <img src="image/icon/fill_star.svg" alt="star">
+                                                    </div>
+                                                    <div class="d-flex justify-content-around main-top-seller-action">
+                                                        <a href="" class="btn">
+                                                            <img src="image/icon/wishlist_top_icon.svg" alt="wish list">
+                                                        </a>
+                                                        <a href="" class="btn">
+                                                            <img src="image/icon/view_top_icon.svg" alt="views">
+                                                        </a>
+                                                        <a href="" class="btn">
+                                                            <img src="image/icon/cart_top_icon.svg" alt="cart">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--                    product 3-->
+                                            <div class="card">
+                                                <img src="image/top_product/top_product_4.png"
+                                                     class="card-img-top" alt="category product">
+                                                <div class="card-body d-flex align-items-start">
+                                                    <p class="card-title w-100 text-start">Vans Old School</p>
+                                                    <p class="card-text w-100 text-start">Sale: <span>1.500.000 đ</span>
+                                                    </p>
+                                                    <p class="card-text w-100 text-start">Price: 2.000.000 đ</p>
+                                                    <div class="d-flex main-top-seller-star">
+                                                        <img src="image/icon/fill_star.svg" alt="star">
+                                                        <img src="image/icon/fill_star.svg" alt="star">
+                                                        <img src="image/icon/fill_star.svg" alt="star">
+                                                        <img src="image/icon/fill_star.svg" alt="star">
+                                                        <img src="image/icon/fill_star.svg" alt="star">
+                                                    </div>
+                                                    <div class="d-flex justify-content-around main-top-seller-action">
+                                                        <a href="" class="btn">
+                                                            <img src="image/icon/wishlist_top_icon.svg" alt="wish list">
+                                                        </a>
+                                                        <a href="" class="btn">
+                                                            <img src="image/icon/view_top_icon.svg" alt="views">
+                                                        </a>
+                                                        <a href="" class="btn">
+                                                            <img src="image/icon/cart_top_icon.svg" alt="cart">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--                    product 4-->
+                                            <div class="card">
+                                                <img src="image/top_product/top_product_5.png"
+                                                     class="card-img-top" alt="category product">
+                                                <div class="card-body d-flex align-items-start">
+                                                    <p class="card-title w-100 text-start">Vans Old School</p>
+                                                    <p class="card-text w-100 text-start">Sale: <span>1.500.000 đ</span>
+                                                    </p>
+                                                    <p class="card-text w-100 text-start">Price: 2.000.000 đ</p>
+                                                    <div class="d-flex main-top-seller-star">
+                                                        <img src="image/icon/fill_star.svg" alt="star">
+                                                        <img src="image/icon/fill_star.svg" alt="star">
+                                                        <img src="image/icon/fill_star.svg" alt="star">
+                                                        <img src="image/icon/fill_star.svg" alt="star">
+                                                        <img src="image/icon/fill_star.svg" alt="star">
+                                                    </div>
+                                                    <div class="d-flex justify-content-around main-top-seller-action">
+                                                        <a href="" class="btn">
+                                                            <img src="image/icon/wishlist_top_icon.svg" alt="wish list">
+                                                        </a>
+                                                        <a href="" class="btn">
+                                                            <img src="image/icon/view_top_icon.svg" alt="views">
+                                                        </a>
+                                                        <a href="" class="btn">
+                                                            <img src="image/icon/cart_top_icon.svg" alt="cart">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!--                product list 2-->
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#main-top-product-container" data-bs-slide="prev">
+                                <img src="image/icon/prev_icon.svg" alt="pre_icon">
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                    data-bs-target="#main-top-product-container" data-bs-slide="next">
+                                <img src="image/icon/next_icon.svg" alt="pre_icon">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!--                partner-->
+                <div class="w-100 d-flex flex-column align-items-center main-partner">
+                    <p>PROUD TO PARTNER WITH</p>
+                    <div class="d-flex w-100 justify-content-around align-items-center">
+                        <img src="./image/partner_logo/partner_logo_1.png" alt="partner">
+                        <img src="./image/partner_logo/partner_logo_2.png" alt="partner">
+                        <img src="./image/partner_logo/partner_logo_3.png" alt="partner">
+                        <img src="./image/partner_logo/partner_logo_4.png" alt="partner">
+                        <img src="./image/partner_logo/partner_logo_5.png" alt="partner">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+<!--footer-->
+<footer class="w-100 d-flex flex-column align-items-center">
+    <!--    newsletter-->
+    <div class="d-flex flex-column align-items-center newsletter">
+        <p>Sign up now & get 10% off</p>
+        <p>Be the first to know about our new arrivals and exclusive offers.</p>
+        <div class="input-group">
+            <input class="form-control" name="received_email" placeholder="Email Address...">
+            <button class="btn">
+                GO
+            </button>
+        </div>
+    </div>
+    <!--    link-->
+    <div class="d-flex footer-link">
+        <!--        mango-->
+        <div class="footer-mango">
+            <a href="">
+                <img src="image/icon/logo_footer.svg" alt="logo">
+            </a>
+            <p class="footer-mango-intro">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam.
+            </p>
+            <div class="d-flex justify-content-between">
+                <!--            customer service -->
+                <div class="footer-customer-service">
+                    <p class="mb-1 text-white text-capitalize fw-normal">Customer service</p>
+                    <p class="fw-bold">(+84)-904839302</p>
+                </div>
+                <!--                payment method -->
+                <div class="footer-payment-method">
+                    <p class="text-capitalize text-white">We accept</p>
+                    <div class="d-flex justify-content-between">
+                        <a href="">
+                            <img src="image/icon/visa_icon.svg">
+                        </a>
+                        <a href="">
+                            <img src="image/icon/mastercard_icon.svg">
+                        </a>
+                        <a href="">
+                            <img src="image/icon/paypal_icon.svg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--        information-->
+        <div class="d-flex flex-column footer-information">
+            <p class="text-white fw-normal">Information</p>
+            <a class="text-white fw-normal" href="">About us</a>
+            <a class="text-white fw-normal" href="">Delivery Information</a>
+            <a class="text-white fw-normal" href="">Privacy Policy</a>
+            <a class="text-white fw-normal" href="">Terms & Conditions</a>
+            <a class="text-white fw-normal" href="">Gift vouchers</a>
+        </div>
+        <!--        account-->
+        <div class="d-flex flex-column footer-account">
+            <p class="text-white fw-normal">Account</p>
+            <a class="text-white fw-normal" href="">My Account</a>
+            <a class="text-white fw-normal" href="">Order History</a>
+            <a class="text-white fw-normal" href="">Wish List</a>
+            <a class="text-white fw-normal" href="">Newsletter</a>
+        </div>
+        <!--        categories-->
+        <div class="d-flex flex-column footer-information">
+            <p class="text-white fw-normal">Categories</p>
+            <a class="text-white fw-normal" href="">Mens</a>
+            <a class="text-white fw-normal" href="">Women</a>
+            <a class="text-white fw-normal" href="">Kids</a>
+            <a class="text-white fw-normal" href="">Brand</a>
+        </div>
+    </div>
+</footer>
+<script src="./lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

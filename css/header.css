@@ -1,0 +1,35 @@
+header{
+    height: 86px;
+    display: flex;
+    align-items: center;
+}
+
+.search-box{
+    width: auto;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.search-box input{
+    width: 152px;
+    background: inherit;
+    outline: none;
+    border: none;
+    color: #FFFFFF;
+}
+
+.icon_group{
+    margin-left: 10px;
+}
+
+::placeholder {
+    color: white;
+}
+
+:-ms-input-placeholder {
+    color: white;
+}
+
+::-ms-input-placeholder {
+    color: white;
+}
+

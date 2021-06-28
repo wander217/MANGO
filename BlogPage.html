@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài viết</title>
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/navigation.css">
+    <link rel="stylesheet" href="./css/main_blog.css">
+    <link rel="stylesheet" href="./css/main-related-product.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+<body>
+<!--    header-->
+<header class="w-100 bg-dark d-flex justify-content-center">
+    <div class="row w-100">
+        <!--        search box-->
+        <div class="col-3 d-flex align-items-center justify-content-end">
+            <form method="post" action="" class="input-group search-box">
+                <input name="search_box" placeholder="Search anything...">
+                <button class="input-group-text btn p-0">
+                    <img src="image/icon/search_icon.svg" alt="search_icon">
+                </button>
+            </form>
+        </div>
+        <!--        logo-->
+        <div class="col-6 d-flex justify-content-center align-items-center">
+            <a href="">
+                <img src="image/icon/logo.svg" alt="logo">
+            </a>
+        </div>
+        <!--        icon-->
+        <div class="col-3">
+            <div class="btn-group icon_group">
+                <a href="" class="btn">
+                    <img src="image/icon/account_icon.svg" alt="account">
+                </a>
+                <a href="" class="btn">
+                    <img src="image/icon/wishlist_icon.svg" alt="wishlist">
+                </a>
+                <a href="" class="btn">
+                    <img src="image/icon/cart_icon.svg" alt="cart">
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container-fluid">
+    <!--navigation-->
+    <nav class="w-100 d-flex flex-column align-items-center mt-4">
+        <!--    category-->
+        <div class="d-flex justify-content-between navigation">
+            <!--        men-->
+            <div class="dropdown">
+                <a class="btn dropdown-button" id="men-button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span>Men</span>
+                    <img src="image/icon/dropdown_icon.svg" alt="dropdown-icon" class="ms-1">
+                </a>
+                <div class="dropdown-menu" id="men-dropdown" aria-labelledby="men-button">
+                    <div class="d-flex justify-content-around align-items-center dropdown-box">
+                        <a href="CategoryPage.html" class="dropdown-product d-flex flex-column align-items-center">
+                            <img src="image/product/sneaker.svg" alt="dropdown-item">
+                            <p>Sneaker</p>
+                        </a>
+                        <a href="CategoryPage.html" class="dropdown-product d-flex flex-column align-items-center">
+                            <img src="image/product/classic.svg" alt="dropdown-item">
+                            <p>Classic</p>
+                        </a>
+                        <a href="CategoryPage.html" class="dropdown-product d-flex flex-column align-items-center">
+                            <img src="image/product/custom.svg" alt="dropdown-item">
+                            <p>Custom</p>
+                        </a>
+                        <a href="CategoryPage.html" class="dropdown-product d-flex flex-column align-items-center">
+                            <img src="image/product/sneaker.svg" alt="dropdown-item">
+                            <p>Demo</p>
+                        </a>
+                        <a href="CategoryPage.html" class="dropdown-product d-flex flex-column align-items-center">
+                            <img src="image/product/classic.svg" alt="dropdown-item">
+                            <p>Demo</p>
+                        </a>
+                        <a href="CategoryPage.html" class="dropdown-product d-flex flex-column align-items-center">
+                            <img src="image/product/custom.svg" alt="dropdown-item">
+                            <p>Demo</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--        woman-->
+            <div class="dropdown">
+                <a class="btn dropdown-button" id="women-button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span>Women</span>
+                    <img src="image/icon/dropdown_icon.svg" alt="dropdown-icon" class="ms-1">
+                </a>
+                <div class="dropdown-menu dropdown-shadow" id="women-dropdown" aria-labelledby="women-button">
+                    <div class="d-flex justify-content-around align-items-center dropdown-box">
+                        <a href="CategoryPage.html" class="dropdown-product d-flex flex-column align-items-center">
+                            <img src="image/product/sneaker.svg" alt="dropdown-item">
+                            <p>Sneaker</p>
+                        </a>
+                        <a href="CategoryPage.html" class="dropdown-product d-flex flex-column align-items-center">
+                            <img src="image/product/classic.svg" alt="dropdown-item">
+                            <p>Classic</p>
+                        </a>
+                        <a href="CategoryPage.html" class="dropdown-product d-flex flex-column align-items-center">
+                            <img src="image/product/custom.svg" alt="dropdown-item">
+                            <p>Custom</p>
+                        </a>
+                        <a href="CategoryPage.html" class="dropdown-product d-flex flex-column align-items-center">
+                            <img src="image/product/sneaker.svg" alt="dropdown-item">
+                            <p>Demo</p>
+                        </a>
+                        <a href="CategoryPage.html" class="dropdown-product d-flex flex-column align-items-center">
+                            <img src="image/product/classic.svg" alt="dropdown-item">
+                            <p>Demo</p>
+                        </a>
+                        <a href="CategoryPage.html" class="dropdown-product d-flex flex-column align-items-center">
+                            <img src="image/product/custom.svg" alt="dropdown-item">
+                            <p>Demo</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--        kid-->
+            <div class="dropdown">
+                <a class="btn dropdown-button" id="kid-button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class>Kid</span>
+                    <img src="image/icon/dropdown_icon.svg" alt="dropdown-icon" class="ms-1">
+                </a>
+                <div class="dropdown-menu" id="kid-dropdown" aria-labelledby="kid-button">
+                    <div class="d-flex justify-content-around align-items-center dropdown-box">
+                        <a href="CategoryPage.html" class="dropdown-product d-flex flex-column align-items-center">
+                            <img src="image/product/sneaker.svg" alt="dropdown-item">
+                            <p>Sneaker</p>
+                        </a>
+                        <a href="CategoryPage.html" class="dropdown-product d-flex flex-column align-items-center">
+                            <img src="image/product/classic.svg" alt="dropdown-item">
+                            <p>Classic</p>
+                        </a>
+                        <a href="CategoryPage.html" class="dropdown-product d-flex flex-column align-items-center">
+                            <img src="image/product/custom.svg" alt="dropdown-item">
+                            <p>Custom</p>
+                        </a>
+                        <a href="CategoryPage.html" class="dropdown-product d-flex flex-column align-items-center">
+                            <img src="image/product/sneaker.svg" alt="dropdown-item">
+                            <p>Demo</p>
+                        </a>
+                        <a href="CategoryPage.html" class="dropdown-product d-flex flex-column align-items-center">
+                            <img src="image/product/classic.svg" alt="dropdown-item">
+                            <p>Demo</p>
+                        </a>
+                        <a href="CategoryPage.html" class="dropdown-product d-flex flex-column align-items-center">
+                            <img src="image/product/custom.svg" alt="dropdown-item">
+                            <p>Demo</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--        new-->
+            <a class="btn dropdown-button" href="NewsPage.html">
+                News<img src="image/icon/dropdown_icon.svg" alt="dropdown-icon" class="ms-1">
+            </a>
+            <!--        information-->
+            <a class="btn dropdown-button" href="AboutUsPage.html">
+                Information<img src="image/icon/dropdown_icon.svg" alt="dropdown-icon" class="ms-1">
+            </a>
+        </div>
+        <!--    breadcrumb-->
+        <div class="breadcrumb-box">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a class="text-black-50 text-decoration-none" href="./HomePage.html">
+                            <span class="breadcrumb-text">Home</span>
+                        </a>
+                        <img src="image/icon/breadcrumb_icon.svg" alt="breadcrumb" class="breadcrumb-icon">
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a class="text-black-50 text-decoration-none" href="./CategoryPage.html">
+                            <span class="breadcrumb-text">Mens</span>
+                        </a>
+                        <img src="image/icon/breadcrumb_icon.svg" alt="breadcrumb" class="breadcrumb-icon">
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                    <span class="breadcrumb-text">
+                        Converse  Chuck Taylor All Star Valentine’s
+                    </span>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </nav>
+    <!--main-->
+    <main class="w-100 d-flex flex-column align-items-center">
+        <p class="main-intro w-100">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum.
+        </p>
+        <div class="w-100 d-flex flex-column align-items-center main-news-image">
+            <img src="image/blog/blog_product_1.png" alt="news_1">
+            <p>Cre:internet</p>
+        </div>
+        <p class="main-news-subtitle w-100">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum.
+        </p>
+        <div class="w-100 d-flex flex-column align-items-center main-news-image">
+            <img src="image/blog/blog_product_2.png" alt="news_2">
+            <img src="image/blog/blog_product_3.png" alt="news_2">
+            <p>Cre:internet</p>
+        </div>
+        <p class="main-news-subtitle w-100">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum.
+        </p>
+        <!--    related product-->
+        <div class="main-related-product d-flex flex-column align-items-center w-100">
+            <p>Related Products</p>
+            <div id="main-related-product-container" class="carousel slide w-100" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!--                product list 1-->
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <div class="w-100 d-flex justify-content-between">
+                            <!--                        product 1-->
+                            <div class="card main-card">
+                                <img src="image/related_product/related_product_1.png" alt="related product"
+                                     class="card-img-top">
+                                <div class="card-body w-100 d-flex flex-column align-items-center">
+                                    <p>K-Swiss Gen -K </p>
+                                    <p>Sale: <span>1.500.000 đ</span></p>
+                                    <p>Price: 2.000.000 đ</p>
+                                </div>
+                            </div>
+                            <!--                        product 2-->
+                            <div class="card main-card">
+                                <img src="image/related_product/related_product_2.png" alt="related product"
+                                     class="card-img-top">
+                                <div class="card-body w-100 d-flex flex-column align-items-center">
+                                    <p>CV Chuck 1970s </p>
+                                    <p>Sale: <span>1.500.000 đ</span></p>
+                                    <p>Price: 2.000.000 đ</p>
+                                </div>
+                            </div>
+                            <!--                        product 3-->
+                            <div class="card main-card">
+                                <p class="position-absolute top-0 fw-normal text-white new-product">New</p>
+                                <img src="image/related_product/related_product_3.png" alt="related product"
+                                     class="card-img-top">
+                                <div class="card-body w-100 d-flex flex-column align-items-center">
+                                    <p>Vans Us MomaMoma </p>
+                                    <p>Sale: <span>1.500.000 đ</span></p>
+                                    <p>Price: 2.000.000 đ</p>
+                                </div>
+                            </div>
+                            <!--                        product 4-->
+                            <div class="card main-card">
+                                <img src="image/related_product/related_product_4.png" alt="related product"
+                                     class="card-img-top">
+                                <div class="card-body w-100 d-flex flex-column align-items-center">
+                                    <p>CV All StarStar </p>
+                                    <p>Sale: <span>1.500.000 đ</span></p>
+                                    <p>Price: 2.000.000 đ</p>
+                                </div>
+                            </div>
+                            <!--                        product 5-->
+                            <div class="card main-card">
+                                <img src="image/related_product/related_product_5.png" alt="related product"
+                                     class="card-img-top">
+                                <div class="card-body w-100 d-flex flex-column align-items-center">
+                                    <p>Vans Old School</p>
+                                    <p>Sale: <span>1.500.000 đ</span></p>
+                                    <p>Price: 2.000.000 đ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--                product list 2-->
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <div class="w-100 d-flex justify-content-between">
+                            <!--                        product 6-->
+                            <div class="card main-card">
+                                <img src="image/related_product/related_product_5.png" alt="related product"
+                                     class="card-img-top">
+                                <div class="card-body w-100 d-flex flex-column align-items-center">
+                                    <p>Vans Old School</p>
+                                    <p>Sale: <span>1.500.000 đ</span></p>
+                                    <p>Price: 2.000.000 đ</p>
+                                </div>
+                            </div>
+                            <!--                        product 7-->
+                            <div class="card main-card">
+                                <img src="image/related_product/related_product_4.png" alt="related product"
+                                     class="card-img-top">
+                                <div class="card-body w-100 d-flex flex-column align-items-center">
+                                    <p>CV All StarStar </p>
+                                    <p>Sale: <span>1.500.000 đ</span></p>
+                                    <p>Price: 2.000.000 đ</p>
+                                </div>
+                            </div>
+                            <!--                        product 8-->
+                            <div class="card main-card">
+                                <img src="image/related_product/related_product_3.png" alt="related product"
+                                     class="card-img-top">
+                                <div class="card-body w-100 d-flex flex-column align-items-center">
+                                    <p>Vans Us MomaMoma </p>
+                                    <p>Sale: <span>1.500.000 đ</span></p>
+                                    <p>Price: 2.000.000 đ</p>
+                                </div>
+                            </div>
+                            <!--                        product 9-->
+                            <div class="card main-card">
+                                <img src="image/related_product/related_product_2.png" alt="related product"
+                                     class="card-img-top">
+                                <div class="card-body w-100 d-flex flex-column align-items-center">
+                                    <p>CV Chuck 1970s </p>
+                                    <p>Sale: <span>1.500.000 đ</span></p>
+                                    <p>Price: 2.000.000 đ</p>
+                                </div>
+                            </div>
+                            <!--                        product 10-->
+                            <div class="card main-card">
+                                <img src="image/related_product/related_product_1.png" alt="related product"
+                                     class="card-img-top">
+                                <div class="card-body w-100 d-flex flex-column align-items-center">
+                                    <p>K-Swiss Gen -K </p>
+                                    <p>Sale: <span>1.500.000 đ</span></p>
+                                    <p>Price: 2.000.000 đ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button"
+                        data-bs-target="#main-related-product-container" data-bs-slide="prev">
+                    <img src="image/icon/prev_icon.svg" alt="pre_icon">
+                </button>
+                <button class="carousel-control-next" type="button"
+                        data-bs-target="#main-related-product-container" data-bs-slide="next">
+                    <img src="image/icon/next_icon.svg" alt="pre_icon">
+                </button>
+            </div>
+        </div>
+        <!--    related news-->
+        <div class="main-related-new d-flex flex-column align-items-center w-100">
+            <p class="w-100 text-start main-related-new-content">Related News</p>
+            <div id="main-related-news-container" class="carousel slide w-100" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!--                news list 1-->
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <div class="w-100 d-flex justify-content-between">
+                            <!--                        news 1-->
+                            <div class="card main-news-card">
+                                <img src="image/related_new/related_new_1.png" alt="related product" class="card-img-top">
+                                <div class="card-body w-100 d-flex flex-column align-items-center">
+                                    <p>Lorem ipsum dolor sit amet </p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                                </div>
+                            </div>
+                            <!--                        news 2-->
+                            <div class="card main-news-card">
+                                <img src="image/related_new/related_new_2.png" alt="related product"
+                                     class="card-img-top">
+                                <div class="card-body w-100 d-flex flex-column align-items-center">
+                                    <p>Lorem ipsum dolor sit amet </p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                                </div>
+                            </div>
+                            <!--                        news 3-->
+                            <div class="card main-news-card">
+                                <img src="image/related_new/related_new_3.png" alt="related product"
+                                     class="card-img-top">
+                                <div class="card-body w-100 d-flex flex-column align-items-center">
+                                    <p>Lorem ipsum dolor sit amet </p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                                </div>
+                            </div>
+                            <!--                        news 4-->
+                            <div class="card main-news-card">
+                                <img src="image/related_new/related_new_4.png" alt="related product"
+                                     class="card-img-top">
+                                <div class="card-body w-100 d-flex flex-column align-items-center">
+                                    <p>Lorem ipsum dolor sit amet </p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                                </div>
+                            </div>
+                            <!--                        news 5-->
+                            <div class="card main-news-card">
+                                <img src="image/related_new/related_new_5.png" alt="related product"
+                                     class="card-img-top">
+                                <div class="card-body w-100 d-flex flex-column align-items-center">
+                                    <p>Lorem ipsum dolor sit amet </p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--                news list 2-->
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <div class="w-100 d-flex justify-content-between">
+                            <!--                        news 1-->
+                            <div class="card main-news-card">
+                                <img src="image/related_new/related_new_5.png" alt="related product"
+                                     class="card-img-top">
+                                <div class="card-body w-100 d-flex flex-column align-items-center">
+                                    <p>Lorem ipsum dolor sit amet </p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                                </div>
+                            </div>
+                            <!--                        news 2-->
+                            <div class="card main-news-card">
+                                <img src="image/related_new/related_new_4.png" alt="related product"
+                                     class="card-img-top">
+                                <div class="card-body w-100 d-flex flex-column align-items-center">
+                                    <p>Lorem ipsum dolor sit amet </p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                                </div>
+                            </div>
+                            <!--                        news 3-->
+                            <div class="card main-news-card">
+                                <img src="image/related_new/related_new_3.png" alt="related product"
+                                     class="card-img-top">
+                                <div class="card-body w-100 d-flex flex-column align-items-center">
+                                    <p>Lorem ipsum dolor sit amet </p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                                </div>
+                            </div>
+                            <!--                        news 4-->
+                            <div class="card main-news-card">
+                                <img src="image/related_new/related_new_2.png" alt="related product"
+                                     class="card-img-top">
+                                <div class="card-body w-100 d-flex flex-column align-items-center">
+                                    <p>Lorem ipsum dolor sit amet </p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                                </div>
+                            </div>
+                            <!--                        news 5-->
+                            <div class="card main-news-card">
+                                <img src="image/related_new/related_new_1.png" alt="related product" class="card-img-top">
+                                <div class="card-body w-100 d-flex flex-column align-items-center">
+                                    <p>Lorem ipsum dolor sit amet </p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button"
+                        data-bs-target="#main-related-news-container" data-bs-slide="prev">
+                    <img src="image/icon/prev_icon.svg" alt="pre_icon">
+                </button>
+                <button class="carousel-control-next" type="button"
+                        data-bs-target="#main-related-news-container" data-bs-slide="next">
+                    <img src="image/icon/next_icon.svg" alt="pre_icon">
+                </button>
+            </div>
+        </div>
+    </main>
+</div>
+<!--footer-->
+<footer class="w-100 d-flex flex-column align-items-center">
+    <!--    newsletter-->
+    <div class="d-flex flex-column align-items-center newsletter">
+        <p>Sign up now & get 10% off</p>
+        <p>Be the first to know about our new arrivals and exclusive offers.</p>
+        <div class="input-group">
+            <input class="form-control" name="received_email" placeholder="Email Address...">
+            <button class="btn">
+                GO
+            </button>
+        </div>
+    </div>
+    <!--    link-->
+    <div class="d-flex footer-link">
+        <!--        mango-->
+        <div class="footer-mango">
+            <a href="">
+                <img src="image/icon/logo_footer.svg" alt="logo">
+            </a>
+            <p class="footer-mango-intro">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam.
+            </p>
+            <div class="d-flex justify-content-between">
+                <!--            customer service -->
+                <div class="footer-customer-service">
+                    <p class="mb-1 text-white text-capitalize fw-normal">Customer service</p>
+                    <p class="fw-bold">(+84)-904839302</p>
+                </div>
+                <!--                payment method -->
+                <div class="footer-payment-method">
+                    <p class="text-capitalize text-white">We accept</p>
+                    <div class="d-flex justify-content-between">
+                        <a href="">
+                            <img src="image/icon/visa_icon.svg">
+                        </a>
+                        <a href="">
+                            <img src="image/icon/mastercard_icon.svg">
+                        </a>
+                        <a href="">
+                            <img src="image/icon/paypal_icon.svg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--        information-->
+        <div class="d-flex flex-column footer-information">
+            <p class="text-white fw-normal">Information</p>
+            <a class="text-white fw-normal" href="">About us</a>
+            <a class="text-white fw-normal" href="">Delivery Information</a>
+            <a class="text-white fw-normal" href="">Privacy Policy</a>
+            <a class="text-white fw-normal" href="">Terms & Conditions</a>
+            <a class="text-white fw-normal" href="">Gift vouchers</a>
+        </div>
+        <!--        account-->
+        <div class="d-flex flex-column footer-account">
+            <p class="text-white fw-normal">Account</p>
+            <a class="text-white fw-normal" href="">My Account</a>
+            <a class="text-white fw-normal" href="">Order History</a>
+            <a class="text-white fw-normal" href="">Wish List</a>
+            <a class="text-white fw-normal" href="">Newsletter</a>
+        </div>
+        <!--        categories-->
+        <div class="d-flex flex-column footer-information">
+            <p class="text-white fw-normal">Categories</p>
+            <a class="text-white fw-normal" href="">Mens</a>
+            <a class="text-white fw-normal" href="">Women</a>
+            <a class="text-white fw-normal" href="">Kids</a>
+            <a class="text-white fw-normal" href="">Brand</a>
+        </div>
+    </div>
+</footer>
+<script src="./lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.main-related-product {
+    margin-top: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.main-related-product p:not(.new-product) {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 39px;
+    color: black;
+}
+
+.main-card {
+    border: none;
+}
+
+.main-card img {
+    width: 210px;
+    height: 166px;
+}
+
+.main-card .card-body p:nth-child(1) {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.main-card .card-body p:nth-child(2),
+.main-card .card-body p:nth-child(3) {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 0;
+}
+
+.main-card .card-body p:nth-child(2) span {
+    color: #FF881F;
+}
+
+#main-related-product-container .carousel-control-prev {
+    transform: translateX(-70%) !important;
+    width: 20px!important;
+}
+
+#main-related-product-container .carousel-control-next {
+    transform: translateX(70%) !important;
+    width: 20px!important;
+}
+
+.new-product {
+    width: 40px;
+    height: 16px;
+    background: #FF1F1F;
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

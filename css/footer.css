@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+footer {
+    margin-top: 60px;
+    height: 523px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.newsletter {
+    width: 700px;
+    margin-top: 60px;
+}
+
+.newsletter p:nth-child(1) {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 39px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.newsletter p:nth-child(2) {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.newsletter div input {
+    padding-top: 7px;
+}
+
+.newsletter div input::placeholder {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.newsletter div button {
+    width: 182px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #FF881F;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.footer-link {
+    width: 1154px;
+    margin-top: 50px;
+}
+
+.footer-mango{
+    width: 550px;
+}
+
+.footer-mango-intro{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 27px;
+    margin-top: 20px;
+    color: white;
+}
+
+.footer-customer-service{
+    width: 156px;
+}
+
+.footer-customer-service p:nth-child(1){
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.footer-customer-service p:nth-child(2){
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 27px;
+    color: #FF881F;
+}
+
+.footer-payment-method{
+    width: 150px;
+    margin-right: 40px;
+}
+
+.footer-payment-method p{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 12px;
+}
+
+.footer-information{
+    margin-right: 37px;
+}
+
+.footer-account{
+    margin-right: 94px;
+}
+
+.footer-information p,
+.footer-account p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.footer-information a,
+.footer-account a{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 27px;
+    text-decoration: none;
+}
+

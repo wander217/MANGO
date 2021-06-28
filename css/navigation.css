@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap');
+.navigation {
+    box-sizing: border-box;
+}
+
+.dropdown:hover span {
+    border-bottom: 1px solid #FF881F;
+}
+
+.dropdown {
+    position: static !important;
+}
+
+.dropdown-menu {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25) !important;
+    left: 50% !important;
+    transform: translate3d(-50%, 150px, 0) !important;
+}
+
+.dropdown-button {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+}
+
+.dropdown-box {
+    width: 1140px;
+    height: 172px;
+}
+
+.dropdown-product {
+    width: 150px;
+    height: 132px;
+    text-decoration: none;
+}
+
+.dropdown-product p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: black;
+}
+
+.breadcrumb-box{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.breadcrumb{
+    --bs-breadcrumb-divider: '' !important;
+}
+
+.breadcrumb-icon{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.breadcrumb-text{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: black;
+}
