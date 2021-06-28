@@ -338,7 +338,7 @@ main {
     box-sizing: border-box;
 }
 
-.card-action > button {
+.card-action > a {
     width: 208px;
     height: 38px;
     background: #FF881F;
